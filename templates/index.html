@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero section-pad" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> OPEN TO PROJECTS &amp; COLLABORATION</p>
+      <h1>Ideas into<br><span class="text-accent">digital impact.</span></h1>
+      <p class="hero-name">I’m Jordan Matondo</p>
+      <p class="hero-role">Software Developer <span>·</span> Freelancer <span>·</span> Graphic Designer</p>
+      <p class="hero-intro">I build digital solutions, create impactful designs, and help individuals and businesses bring their ideas to life.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">View My Projects <span aria-hidden="true">↗</span></a>
+        <a class="button button-secondary" href="#contact">Contact Me</a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span> Creative thinking. Practical solutions.</div>
+    </div>
+    <div class="hero-visual" aria-label="Decorative profile image placeholder">
+      <div class="visual-orbit orbit-one"></div>
+      <div class="visual-orbit orbit-two"></div>
+      <div class="profile-card">
+        <div class="profile-sun"></div>
+        <div class="profile-shape shape-back"></div>
+        <div class="profile-shape shape-front"></div>
+        <div class="profile-initials">JM</div>
+        <div class="profile-caption"><span class="caption-line"></span><span>YOUR PHOTO HERE</span></div>
+      </div>
+      <div class="floating-tag tag-code"><span class="tag-icon" aria-hidden="true">&lt;/&gt;</span><span>Build<br><b>with purpose</b></span></div>
+      <div class="floating-tag tag-design"><span class="tag-icon tag-icon-design" aria-hidden="true">✳</span><span>Make it<br><b>memorable</b></span></div>
+      <span class="visual-spark spark-one" aria-hidden="true">✳</span>
+      <span class="visual-spark spark-two" aria-hidden="true">✦</span>
+    </div>
+  </div>
+  <div class="container hero-bottom">
+    <span>BASED IN THE DIGITAL WORLD</span>
+    <a href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<section class="section section-about" id="about">
+  <div class="container about-grid">
+    <div class="section-heading">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>Curious by nature.<br><span class="text-accent">Creative by choice.</span></h2>
+    </div>
+    <div class="about-copy">
+      <p class="lead">I’m interested in the ways technology and creativity can make everyday work better.</p>
+      <p>From software development and freelance projects to graphic design and data transcription, I enjoy turning ideas into clear, useful digital solutions. I bring curiosity, thoughtful problem-solving, and a commitment to continuous learning to the work I take on.</p>
+      <p>Most of all, I like helping people move an idea forward—one considered step at a time.</p>
+      <a class="text-link" href="#contact">Have an idea in mind? <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-skills" id="skills">
+  <div class="container">
+    <div class="section-topline">
+      <div>
+        <p class="eyebrow">TOOLS &amp; CAPABILITIES</p>
+        <h2>Skills I bring<br><span class="text-accent">to the table.</span></h2>
+      </div>
+      <p class="section-aside">A growing toolkit for building, creating, and getting things done.</p>
+    </div>
+    <div class="skills-grid">
+      {% set skills = [
+        ("01", "Python", "skill-python"),
+        ("02", "FastAPI", "skill-fastapi"),
+        ("03", "HTML5", "skill-html"),
+        ("04", "CSS3", "skill-css"),
+        ("05", "JavaScript", "skill-js"),
+        ("06", "Responsive Web Design", "skill-responsive"),
+        ("07", "Graphic Design", "skill-design"),
+        ("08", "Data Transcription", "skill-transcription"),
+        ("09", "Problem-Solving", "skill-problem"),
+        ("10", "Digital Productivity Tools", "skill-productivity")
+      ] %}
+      {% for number, skill, style in skills %}
+      <div class="skill-card">
+        <span class="skill-number">{{ number }}</span>
+        <span class="skill-icon {{ style }}" aria-hidden="true"></span>
+        <span class="skill-name">{{ skill }}</span>
+        <span class="skill-arrow" aria-hidden="true">↗</span>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="skills-note">These are skills I’m building and using—not a claim of expert-level proficiency.</p>
+  </div>
+</section>
+
+<section class="section section-projects" id="projects">
+  <div class="container">
+    <div class="section-topline projects-heading">
+      <div>
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Ideas in <span class="text-accent">progress.</span></h2>
+      </div>
+      <p class="section-aside">A starting point for the work I’m excited to share. These sample cards are placeholders—swap in your real projects, visuals, and links.</p>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card project-large">
+        <button class="project-art art-portfolio" type="button" data-project-title="Personal Portfolio Website" data-project-description="A clean, responsive space to introduce a personal brand and showcase creative work. This sample concept is a starting point for a real portfolio project." data-project-tools="HTML · CSS · JavaScript" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Personal Portfolio Website sample">
+          <span class="placeholder-label">PLACEHOLDER PROJECT</span>
+          <span class="art-window"><span class="window-bar"><i></i><i></i><i></i></span><span class="window-content"><b>Make your<br>first impression.</b><i></i><i></i></span></span>
+          <span class="art-number">01</span>
+        </button>
+        <div class="project-info"><div><h3>Personal Portfolio Website</h3><p>A clean, responsive space to introduce a personal brand and showcase creative work.</p><span class="project-tools">HTML · CSS · JavaScript</span></div><button class="project-link" type="button" data-project-title="Personal Portfolio Website" data-project-description="A clean, responsive space to introduce a personal brand and showcase creative work. This sample concept is a starting point for a real portfolio project." data-project-tools="HTML · CSS · JavaScript" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Personal Portfolio Website sample">↗</button></div>
+      </article>
+      <article class="project-card">
+        <button class="project-art art-converter" type="button" data-project-title="Picture Converter Application" data-project-description="A sample concept for a handy image-format conversion tool. Replace this card with a link to your actual application or a project case study." data-project-tools="Python · Image tools" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Picture Converter Application sample">
+          <span class="placeholder-label">PLACEHOLDER PROJECT</span>
+          <span class="converter-icon"><span>JPG</span><b>⇄</b><span>PNG</span></span>
+          <span class="art-caption">A simpler way to<br>change formats.</span><span class="art-number">02</span>
+        </button>
+        <div class="project-info"><div><h3>Picture Converter Application</h3><p>A sample concept for a handy image-format conversion tool.</p><span class="project-tools">Python · Image tools</span></div><button class="project-link" type="button" data-project-title="Picture Converter Application" data-project-description="A sample concept for a handy image-format conversion tool. Replace this card with a link to your actual application or a project case study." data-project-tools="Python · Image tools" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Picture Converter Application sample">↗</button></div>
+      </article>
+      <article class="project-card">
+        <button class="project-art art-design" type="button" data-project-title="Business Graphic Design" data-project-description="A placeholder visual direction for a small business brand. Replace the illustrative artwork and details with your own design project." data-project-tools="Graphic design · Branding" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Business Graphic Design sample">
+          <span class="placeholder-label">PLACEHOLDER PROJECT</span>
+          <span class="design-poster"><b>GOOD<br>THINGS<br>GROW.</b><i></i><small>BRAND CONCEPT · 2025</small></span>
+          <span class="art-number">03</span>
+        </button>
+        <div class="project-info"><div><h3>Business Graphic Design</h3><p>A placeholder visual direction for a small business brand.</p><span class="project-tools">Graphic design · Branding</span></div><button class="project-link" type="button" data-project-title="Business Graphic Design" data-project-description="A placeholder visual direction for a small business brand. Replace the illustrative artwork and details with your own design project." data-project-tools="Graphic design · Branding" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Business Graphic Design sample">↗</button></div>
+      </article>
+      <article class="project-card">
+        <button class="project-art art-transcription" type="button" data-project-title="Data Transcription Project" data-project-description="A sample workflow concept focused on careful, organized data entry. Replace it with a description of a real transcription project when available." data-project-tools="Data transcription · Productivity tools" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Data Transcription Project sample">
+          <span class="placeholder-label">PLACEHOLDER PROJECT</span>
+          <span class="transcription-sheet"><i></i><i></i><i></i><i></i><i></i><b>01</b></span>
+          <span class="art-caption">Clear, organized<br>information.</span><span class="art-number">04</span>
+        </button>
+        <div class="project-info"><div><h3>Data Transcription Project</h3><p>A sample workflow concept focused on careful, organized data entry.</p><span class="project-tools">Data transcription · Productivity tools</span></div><button class="project-link" type="button" data-project-title="Data Transcription Project" data-project-description="A sample workflow concept focused on careful, organized data entry. Replace it with a description of a real transcription project when available." data-project-tools="Data transcription · Productivity tools" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Data Transcription Project sample">↗</button></div>
+      </article>
+      <article class="project-card project-large">
+        <button class="project-art art-webapp" type="button" data-project-title="Web Application" data-project-description="A placeholder for a practical web app designed around a real-world need. Replace this sample with a description and link to an application you have built." data-project-tools="Python · FastAPI · HTML · CSS" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Web Application sample">
+          <span class="placeholder-label">PLACEHOLDER PROJECT</span>
+          <span class="dashboard"><span class="dash-sidebar"><b>J.</b><i></i><i></i><i></i></span><span class="dash-main"><b>A little more<br>organized.</b><i></i><span><i></i><i></i><i></i></span></span></span>
+          <span class="art-number">05</span>
+        </button>
+        <div class="project-info"><div><h3>Web Application</h3><p>A placeholder for a practical web app designed around a real-world need.</p><span class="project-tools">Python · FastAPI · HTML · CSS</span></div><button class="project-link" type="button" data-project-title="Web Application" data-project-description="A placeholder for a practical web app designed around a real-world need. Replace this sample with a description and link to an application you have built." data-project-tools="Python · FastAPI · HTML · CSS" aria-haspopup="dialog" aria-controls="project-dialog" aria-label="View details for the Web Application sample">↗</button></div>
+      </article>
+    </div>
+    <div class="placeholder-notice"><span aria-hidden="true">✳</span> Sample content throughout this gallery is illustrative and should be replaced with actual work.</div>
+  </div>
+</section>
+
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" aria-describedby="project-dialog-description">
+  <form method="dialog" class="dialog-dismiss">
+    <button class="dialog-close" type="submit" aria-label="Close project details">×</button>
+  </form>
+  <p class="eyebrow">SAMPLE PROJECT DETAILS</p>
+  <h2 id="project-dialog-title"></h2>
+  <p id="project-dialog-description"></p>
+  <p class="dialog-tools"><strong>Tools:</strong> <span id="project-dialog-tools"></span></p>
+  <p class="dialog-placeholder-note">This is illustrative placeholder content, not a completed client project.</p>
+  <a class="button button-primary" href="#contact">Discuss a similar project <span aria-hidden="true">↗</span></a>
+</dialog>
+
+<section class="section section-services" id="services">
+  <div class="container services-layout">
+    <div class="services-intro">
+      <p class="eyebrow">WAYS WE CAN WORK TOGETHER</p>
+      <h2>Good work starts<br>with a <span class="text-accent">conversation.</span></h2>
+      <p>Services are flexible and can be tailored to your project, goals, and timeline.</p>
+      <a class="button button-primary" href="#contact">Tell me what you need <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="service-list">
+      <article class="service-item"><span class="service-index">01</span><div><h3>Website Development</h3><p>Responsive websites with clear structure, thoughtful details, and a welcoming experience.</p></div><span class="service-symbol" aria-hidden="true">↗</span></article>
+      <article class="service-item"><span class="service-index">02</span><div><h3>Portfolio Website Creation</h3><p>A personal website that brings your work, story, and next opportunity together.</p></div><span class="service-symbol" aria-hidden="true">↗</span></article>
+      <article class="service-item"><span class="service-index">03</span><div><h3>Graphic Design</h3><p>Purposeful visual assets to help communicate an idea or give a brand a cohesive feel.</p></div><span class="service-symbol" aria-hidden="true">↗</span></article>
+      <article class="service-item"><span class="service-index">04</span><div><h3>Data Transcription</h3><p>Careful transcription and organization of information for easier everyday use.</p></div><span class="service-symbol" aria-hidden="true">↗</span></article>
+      <article class="service-item"><span class="service-index">05</span><div><h3>Basic Web Application Development</h3><p>Simple web-based tools shaped around a specific task or small workflow.</p></div><span class="service-symbol" aria-hidden="true">↗</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow">LET’S MAKE SOMETHING USEFUL</p>
+      <h2>Have an idea?<br><span class="text-accent">Let’s talk.</span></h2>
+      <p>Tell me a little about what you’re working on. I’ll be glad to hear from you.</p>
+      {% if site.contact_email %}
+      <a class="contact-email" href="mailto:{{ site.contact_email }}">{{ site.contact_email }} <span aria-hidden="true">↗</span></a>
+      {% else %}
+      <p class="contact-config-note">Contact delivery is not configured yet. Messages can be sent once SMTP settings are added.</p>
+      {% endif %}
+    </div>
+    <form class="contact-form" action="{{ url_for('contact') }}" method="post">
+      {% if errors %}
+      <div class="form-alert form-error" role="alert" tabindex="-1">
+        <strong>We couldn’t send your message.</strong>
+        <ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if success_message %}
+      <div class="form-alert form-success" role="status" tabindex="-1">{{ success_message }}</div>
+      {% endif %}
+      <div class="form-row">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required value="{{ form_values.get('name', '') }}" placeholder="Jordan Matondo">
+      </div>
+      <div class="form-row">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required value="{{ form_values.get('email', '') }}" placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" maxlength="150" required value="{{ form_values.get('subject', '') }}" placeholder="What would you like to work on?">
+      </div>
+      <div class="form-row">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="4" maxlength="5000" required placeholder="A few details about your idea...">{{ form_values.get('message', '') }}</textarea>
+      </div>
+      <button class="button button-primary form-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+      <p class="form-footnote">Your message is sent only when email delivery is configured.</p>
+    </form>
+  </div>
+</section>
+{% endblock %}
