@@ -342,47 +342,12 @@ h3 {
   box-shadow: 0 24px 65px rgb(50 73 124 / 16%);
 }
 
-.profile-sun {
-  position: absolute;
-  top: 12%;
-  right: 13%;
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #fff2d8;
-}
-
-.profile-shape {
-  position: absolute;
-  bottom: 16%;
-  width: 76%;
-  height: 53%;
-  border-radius: 50% 50% 12% 12%;
-}
-
-.shape-back {
-  right: -12%;
-  background: #90a9ed;
-  transform: rotate(-11deg);
-}
-
-.shape-front {
-  left: -12%;
-  background: linear-gradient(140deg, #526fc5, #344d9a);
-  transform: rotate(9deg);
-}
-
-.profile-initials {
-  position: absolute;
-  z-index: 2;
-  top: 47%;
-  left: 50%;
-  color: rgb(255 255 255 / 86%);
-  font-family: var(--font-display);
-  font-size: clamp(65px, 8vw, 100px);
-  font-weight: 800;
-  letter-spacing: -0.1em;
-  transform: translate(-50%, -50%);
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
 }
 
 .profile-caption {
